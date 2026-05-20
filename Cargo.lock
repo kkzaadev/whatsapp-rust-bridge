@@ -1419,6 +1419,48 @@ dependencies = [
 [[package]]
 name = "wacore"
 version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "aes",
+ "anyhow",
+ "async-channel",
+ "async-lock",
+ "async-trait",
+ "base64",
+ "bytes",
+ "chrono",
+ "ctr",
+ "event-listener",
+ "flate2",
+ "futures",
+ "hex",
+ "hkdf",
+ "hmac",
+ "itoa",
+ "log",
+ "md5",
+ "portable-atomic",
+ "prost",
+ "rand",
+ "serde",
+ "serde-big-array",
+ "serde_json",
+ "sha1",
+ "sha2",
+ "subtle",
+ "thiserror",
+ "typed-builder",
+ "wacore-appstate 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-binary 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-derive 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-noise 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "waproto 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+]
+
+[[package]]
+name = "wacore"
+version = "0.6.0"
 source = "git+https://github.com/oxidezap/whatsapp-rust?branch=main#20f1ce86acce3847dff999969d5fbc7169919bab"
 dependencies = [
  "aes",
@@ -1451,12 +1493,33 @@ dependencies = [
  "subtle",
  "thiserror",
  "typed-builder",
- "wacore-appstate",
- "wacore-binary",
- "wacore-derive",
- "wacore-libsignal",
- "wacore-noise",
- "waproto",
+ "wacore-appstate 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-binary 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-derive 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-noise 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "waproto 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+]
+
+[[package]]
+name = "wacore-appstate"
+version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "anyhow",
+ "bytemuck",
+ "hex",
+ "hkdf",
+ "log",
+ "prost",
+ "serde",
+ "serde-big-array",
+ "serde_json",
+ "sha2",
+ "thiserror",
+ "wacore-binary 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "waproto 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
 ]
 
 [[package]]
@@ -1475,9 +1538,25 @@ dependencies = [
  "serde_json",
  "sha2",
  "thiserror",
- "wacore-binary",
- "wacore-libsignal",
- "waproto",
+ "wacore-binary 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "waproto 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+]
+
+[[package]]
+name = "wacore-binary"
+version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "bytes",
+ "compact_str",
+ "flate2",
+ "hashify",
+ "itoa",
+ "serde",
+ "serde_json",
+ "stable_deref_trait",
+ "yoke",
 ]
 
 [[package]]
@@ -1499,11 +1578,53 @@ dependencies = [
 [[package]]
 name = "wacore-derive"
 version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "wacore-derive"
+version = "0.6.0"
 source = "git+https://github.com/oxidezap/whatsapp-rust?branch=main#20f1ce86acce3847dff999969d5fbc7169919bab"
 dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "wacore-libsignal"
+version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "aes",
+ "arrayref",
+ "async-trait",
+ "bytes",
+ "cbc",
+ "chrono",
+ "ctr",
+ "curve25519-dalek",
+ "derive_more",
+ "displaydoc",
+ "ghash",
+ "hex",
+ "hkdf",
+ "hmac",
+ "log",
+ "prost",
+ "rand",
+ "serde",
+ "sha1",
+ "sha2",
+ "subtle",
+ "thiserror",
+ "uuid",
+ "waproto 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "x25519-dalek",
 ]
 
 [[package]]
@@ -1534,8 +1655,26 @@ dependencies = [
  "subtle",
  "thiserror",
  "uuid",
- "waproto",
+ "waproto 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
  "x25519-dalek",
+]
+
+[[package]]
+name = "wacore-noise"
+version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "anyhow",
+ "bytes",
+ "hkdf",
+ "log",
+ "prost",
+ "rand",
+ "sha2",
+ "thiserror",
+ "wacore-binary 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "waproto 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
 ]
 
 [[package]]
@@ -1551,9 +1690,18 @@ dependencies = [
  "rand",
  "sha2",
  "thiserror",
- "wacore-binary",
- "wacore-libsignal",
- "waproto",
+ "wacore-binary 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "waproto 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+]
+
+[[package]]
+name = "waproto"
+version = "0.6.0"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
+dependencies = [
+ "prost",
+ "serde",
 ]
 
 [[package]]
@@ -1698,7 +1846,7 @@ dependencies = [
 [[package]]
 name = "whatsapp-rust"
 version = "0.6.0"
-source = "git+https://github.com/oxidezap/whatsapp-rust?branch=main#20f1ce86acce3847dff999969d5fbc7169919bab"
+source = "git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack#1ab104b2a456c1ffdbdcbffaa16972a48716c765"
 dependencies = [
  "anyhow",
  "async-channel",
@@ -1720,9 +1868,9 @@ dependencies = [
  "serde",
  "serde_json",
  "thiserror",
- "wacore",
- "wacore-binary",
- "waproto",
+ "wacore 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "wacore-binary 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
+ "waproto 0.6.0 (git+https://github.com/kkzaadev/whatsapp-rust?branch=fix-recipient-ack)",
 ]
 
 [[package]]
@@ -1753,11 +1901,11 @@ dependencies = [
  "thiserror",
  "tsify-next",
  "uuid",
- "wacore",
- "wacore-appstate",
- "wacore-binary",
- "wacore-libsignal",
- "waproto",
+ "wacore 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-appstate 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-binary 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "wacore-libsignal 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
+ "waproto 0.6.0 (git+https://github.com/oxidezap/whatsapp-rust?branch=main)",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "wasm-streams",
