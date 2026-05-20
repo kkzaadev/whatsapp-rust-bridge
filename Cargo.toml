@@ -70,14 +70,16 @@ thiserror = { version = "2.0.18", default-features = false }
 tsify-next = { version = "0.5", default-features = false, features = ["js"] }
 uuid = { version = "1.23.1", default-features = false, features = ["v4", "js"] }
 
-wacore = { git = "https://github.com/oxidezap/whatsapp-rust", branch = "main", features = [
+wacore = { git = "https://github.com/kkzaadev/whatsapp-rust", branch = "fix-recipient-ack", features = [
 	"js",
 	"danger-skip-cert-chain-verify"
 ] }
-wacore-appstate = { git = "https://github.com/oxidezap/whatsapp-rust", branch = "main" }
-wacore-binary = { git = "https://github.com/oxidezap/whatsapp-rust", branch = "main", features = ["serde"] }
-wacore-libsignal = { git = "https://github.com/oxidezap/whatsapp-rust", branch = "main" }
-waproto = { git = "https://github.com/oxidezap/whatsapp-rust", branch = "main" }
+wacore-appstate = { git = "https://github.com/kkzaadev/whatsapp-rust", branch = "fix-recipient-ack" }
+wacore-binary = { git = "https://github.com/kkzaadev/whatsapp-rust", branch = "fix-recipient-ack", features = [
+	"serde"
+] }
+wacore-libsignal = { git = "https://github.com/kkzaadev/whatsapp-rust", branch = "fix-recipient-ack" }
+waproto = { git = "https://github.com/kkzaadev/whatsapp-rust", branch = "fix-recipient-ack" }
 wasm-bindgen = "0.2.121"
 wasm-bindgen-futures = "0.4.71"
 wasm-streams = "0.5"
